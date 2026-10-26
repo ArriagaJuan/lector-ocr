@@ -2,7 +2,7 @@
 
 Aplicación de visión por computadora para extraer mediciones de videos y documentar los resultados en Excel. El proyecto está basado en [`mp4-ocr-analyzer`](https://github.com/lohnjouis/mp4-ocr-analyzer), de lohnjouis, con funciones adaptadas y ampliadas para un flujo de lectura más específico: varias zonas de lectura, intervalos o etapas, navegación y estabilización experimental, evidencia por fotograma y reportes Excel.
 
-El código disponible se reconstruyó con ayuda de IA a partir de tres grabaciones de pantalla después de que se perdiera el acceso al equipo con el código fuente original. Por ello, esta carpeta **no es una restauración exacta** y algunos módulos y bloques se reimplementaron. Consulte `INFORME_RECUPERACION.md` para conocer el alcance y las limitaciones de la reconstrucción.
+El código disponible se reconstruyó con ayuda de IA a partir de tres grabaciones de pantalla, ya que no se contó con el código fuente original. Por ello, esta carpeta **no es una restauración exacta** y algunos módulos y bloques se reimplementaron. Consulte `INFORME_RECUPERACION.md` para conocer el alcance y las limitaciones de la reconstrucción.
 
 ## Atribución
 

@@ -1,24 +1,16 @@
 # Informe de reconstrucción de código — Proyecto laser
 
-**Fecha:** 21 de octubre de 2026  
-**Fuente:** grabaciones originales del 20 de octubre de 2026, disponibles en la carpeta `Ocr` de Google Drive.  
 **Propósito:** reconstruir un entorno funcional de lectura OCR de mediciones en videos tras la pérdida de acceso al proyecto.
 
 ## Origen y atribución del proyecto
 
-El proyecto previo del autor se considera basado en [`lohnjouis/mp4-ocr-analyzer`](https://github.com/lohnjouis/mp4-ocr-analyzer), al que se agregaron y adaptaron funciones para un flujo de lectura más específico. El equipo donde estaba el código original sufrió un incidente de seguridad y no fue posible recuperar sus archivos fuente; la versión de esta carpeta se reconstruyó con ayuda de IA a partir de las grabaciones enumeradas abajo. No se realizó una comparación línea por línea con el repositorio de referencia ni con los archivos originales, por lo que este informe documenta el origen recordado y el método de reconstrucción, no una equivalencia exacta entre códigos.
+El proyecto previo del autor se considera basado en [`lohnjouis/mp4-ocr-analyzer`](https://github.com/lohnjouis/mp4-ocr-analyzer), al que se agregaron y adaptaron funciones para un flujo de lectura más específico. La versión actual se reconstruyó con ayuda de IA a partir de grabaciones de pantalla, porque no se contó con el código fuente original. No fue posible hacer una comparación línea por línea, por lo que esta atribución registra el origen recordado y no afirma que ambos códigos sean idénticos.
 
 El repositorio de referencia no muestra un archivo de licencia. Si se confirma que la versión reconstruida conserva código fuente de ese repositorio, la publicación debe contar con la autorización o licencia correspondiente.
 
-## Grabaciones examinadas
+## Material de reconstrucción
 
-| Grabación | Duración | Archivo que aparece en VS Code |
-|---|---:|---|
-| `20261020_160730.mp4` | 34.27 s | `motor.py` |
-| `20261020_160824_parte_01.mp4` | 47.25 s | `app.py` |
-| `20261020_160824_parte_02.mp4` | 46.97 s | `app.py` |
-
-Las grabaciones son fotografías en video de un monitor que desplaza las líneas con rapidez; algunas secciones están parcialmente tapadas, repetidas o desenfocadas. No disponemos de los archivos `.py` originales ni de su historial de versiones. **Lo recuperado NO es una transcripción íntegra idéntica al original.**
+Se usaron tres grabaciones de pantalla del código en VS Code. Algunas secciones estaban parcialmente tapadas, repetidas o desenfocadas. No se contó con los archivos `.py` originales ni con su historial de versiones. **Lo reconstruido no es una transcripción íntegra idéntica al original.**
 
 ## Componentes entregados
 
@@ -60,7 +52,7 @@ Las grabaciones son fotografías en video de un monitor que desplaza las líneas
 
 ## Seguridad y conservación
 
-El código recuperado no contiene conexiones de red, credenciales ni funciones que alteren las grabaciones fuente. La evidencia y el Excel se guardan al lado del video seleccionado y no sustituyen el archivo original. Dada la incidencia de seguridad mencionada, **ejecutar únicamente en un equipo/entorno autorizado y confiable**, fuera de carpetas sincronizadas que puedan seguir afectadas. Conservar los videos originales como prueba y revisar las rutas antes de exportar.
+El código revisado no contiene conexiones de red ni credenciales. La evidencia y el Excel se guardan al lado del video seleccionado y no sustituyen el archivo original. Ejecutar el programa en un equipo confiable, conservar los videos originales y revisar las rutas antes de exportar.
 
 ## Siguiente validación recomendada
 
