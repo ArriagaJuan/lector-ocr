@@ -81,4 +81,4 @@ Ajuste las coordenadas del ejemplo a las lecturas reales. La normalización desc
 
 ## Limitaciones
 
-Los módulos auxiliares son reimplementaciones; algunas líneas de `motor.py` y `app.py` también fueron inferidas. Aún no se verificó la aplicación con el OCR real en videos del equipo de calibración. Consulte el informe para detalles de trazabilidad y riesgos.
+Los módulos auxiliares son reimplementaciones; algunas líneas de `motor.py` y `app.py` también fueron inferidas. El autor confirma que el proyecto se probó con videos reales y funcionó; no se conservaron métricas cuantitativas de esa validación. Consulte el informe para detalles de trazabilidad y riesgos.

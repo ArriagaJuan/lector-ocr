@@ -42,7 +42,7 @@ Las grabaciones son fotografías en video de un monitor que desplaza las líneas
 ## Qué no está garantizado
 
 1. No se recuperó el código fuente literal de los archivos auxiliares `estabilizacion_experimental.py` ni `deteccion_eventos_experimental.py`.
-2. No se pudo verificar el reconocimiento OCR sobre un video de calibración del usuario por falta del modelo OCR original y de sus datos medidos esperados; el entorno de prueba no tenía `rapidocr-onnxruntime` instalado.
+2. El usuario confirma que el proyecto sí se probó con videos reales y funcionó. Este informe no registra qué videos se usaron ni una comparación cuantitativa con valores de referencia, por lo que no atribuye una precisión numérica a esas pruebas.
 3. Los criterios de umbral de la detección automática de intervalos se sustituyeron por una propuesta aproximada y requieren evaluación en datos reales.
 4. La precisión de ECC depende de elegir un ancla fija con textura suficiente y de cambios pequeños entre fotogramas.
 5. La posición, colores y algunas etiquetas de la interfaz pueden variar frente a la versión original.
@@ -56,7 +56,7 @@ Las grabaciones son fotografías en video de un monitor que desplaza las líneas
 - Apertura de video sintético, vista previa, selección de zona, navegación de tiempo y zoom: **correcto**.
 - Creación de dos etapas Excel con lecturas y archivos evidencia: **correcto**.
 - Cancelación antes de procesar que no deja Excel final: **correcto**.
-- **Pendiente:** instalar el OCR real en equipo controlado y validar contra videos/datos de referencia.
+- **Prueba con datos reales:** el usuario confirma que el OCR se ejecutó en videos reales y funcionó; no se conservaron aquí resultados cuantitativos de esa prueba.
 
 ## Seguridad y conservación
 
@@ -64,4 +64,4 @@ El código recuperado no contiene conexiones de red, credenciales ni funciones q
 
 ## Siguiente validación recomendada
 
-Usar un video de prueba corto con tres o cuatro lecturas cuya referencia esté registrada. Comparar manualmente cada OCR con el valor visible, revisar porcentaje de lecturas aceptadas y errores, verificar los recortes y evaluar si la estabilización mejora los resultados antes de usar en calibraciones reales.
+Para dejar una validación reproducible, registrar un video de prueba corto con tres o cuatro lecturas cuya referencia esté anotada. Comparar manualmente cada OCR con el valor visible, guardar porcentaje de lecturas aceptadas y errores, verificar los recortes y evaluar si la estabilización mejora los resultados.
