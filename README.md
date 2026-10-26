@@ -1,18 +1,18 @@
 # Lector de mediciones en video
 
-Desarrollé esta aplicación para leer mediciones numéricas en videos con OCR y guardar los resultados en un archivo Excel. Tomé como referencia [`mp4-ocr-analyzer`](https://github.com/lohnjouis/mp4-ocr-analyzer) y adapté el proyecto a mi flujo de trabajo, con varias zonas de lectura, selección de intervalos, navegación por el video, evidencia por fotograma y resumen de secciones en Excel.
+Aplicación de visión por computadora para extraer mediciones numéricas de videos mediante OCR y guardar los resultados en Excel. El proyecto toma como referencia [`mp4-ocr-analyzer`](https://github.com/lohnjouis/mp4-ocr-analyzer) y adapta su propósito a un flujo de trabajo con varias zonas de lectura, selección de intervalos, navegación por el video, evidencia por fotograma y resumen de secciones.
 
-Reconstruí la versión actual con ayuda de IA a partir de grabaciones de pantalla, porque no tenía disponible el código fuente original. Por eso, algunos componentes son reimplementaciones.
+La versión disponible se reconstruyó con ayuda de IA a partir de grabaciones de pantalla, ya que no se contó con el código fuente original. Algunos componentes son reimplementaciones.
 
 ## Requisitos
 
 - Windows 10 o posterior.
-- Python 3.10 o superior; recomiendo Python 3.11.
-- Dependencias instaladas desde `requirements.txt`.
+- Python 3.10 o superior (se recomienda Python 3.11).
+- Dependencias indicadas en `requirements.txt`.
 
 ## Instalación
 
-Abre PowerShell en la carpeta del proyecto y ejecuta:
+Abra PowerShell en la carpeta del proyecto y ejecute:
 
 ```powershell
 py -3.11 -m venv .venv
@@ -22,31 +22,31 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Si no tienes Python 3.11, puedes usar `py -3` con Python 3.10 o superior. Si PowerShell no permite activar el entorno, ejecuta:
+Si Python 3.11 no está instalado, puede utilizar `py -3` con Python 3.10 o superior. Si PowerShell no permite activar el entorno, ejecute:
 
 ```powershell
 .venv\Scripts\python.exe -m pip install -r requirements.txt
 .venv\Scripts\python.exe app.py
 ```
 
-También puedes iniciar el programa con `ejecutar.bat`.
+También puede iniciar la aplicación con `ejecutar.bat`.
 
 ## Uso básico
 
-1. Abro un video y dibujo una zona alrededor de cada valor que quiero leer. Puedo configurar hasta cuatro zonas.
-2. Pruebo la lectura de cada zona y ajusto sus parámetros.
-3. Elijo el periodo de muestreo y los intervalos que quiero procesar.
-4. Uso los controles para navegar por el video y marcar los tramos de interés. Los botones de −1 s, +1 s, −5 s, +5 s, −10 s y +10 s permiten ajustar la posición.
-5. Inicio la generación del Excel. Junto al video se guardan el libro de resultados y las imágenes de evidencia.
+1. Abra un video y dibuje una zona alrededor de cada valor que se desea leer. Se pueden configurar hasta cuatro zonas.
+2. Pruebe la lectura de cada zona y ajuste sus parámetros.
+3. Defina el periodo de muestreo y los intervalos que se procesarán.
+4. Navegue por el video y marque los tramos de interés. Los controles de −1 s, +1 s, −5 s, +5 s, −10 s y +10 s permiten ajustar la posición.
+5. Genere el archivo Excel. El libro y las imágenes de evidencia se guardan junto al video.
 
-En el Excel incluyo una hoja de resumen con el rango de segundos de cada sección. La franja de navegación muestra visualmente los intervalos seleccionados. La detección automática de etapas y la estabilización son funciones experimentales; reviso sus resultados antes de usarlos.
+El libro incluye una hoja de resumen con el rango de segundos de cada sección. La franja de navegación muestra los intervalos seleccionados. La detección automática de etapas y la estabilización son funciones experimentales; sus resultados deben revisarse.
 
 ## Pruebas
 
-Ejecuto las pruebas automatizadas con:
+Para ejecutar las pruebas automatizadas:
 
 ```powershell
 python -m unittest discover -s tests -v
 ```
 
-Las pruebas usan OCR simulado y videos sintéticos. La precisión del OCR depende de la calidad del video, el enfoque y la legibilidad de los valores.
+Las pruebas utilizan OCR simulado y videos sintéticos. La precisión del OCR depende de la calidad del video, el enfoque y la legibilidad de los valores.
