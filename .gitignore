@@ -1,0 +1,19 @@
+# Entornos y archivos locales de Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Resultados generados localmente
+*.xlsx
+evidencias*/
+
+# Capturas de referencia del código; mantener localmente por privacidad
+/referencias_video/
+
+# Configuración local de editores y sistema operativo
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

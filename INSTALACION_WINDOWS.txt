@@ -1,0 +1,8 @@
+INSTALACION WINDOWS
+
+Extrae el proyecto completo y ejecuta ejecutar.bat.
+El lanzador busca Python 3.11, 3.12, 3.10 o 3.13 o Python en PATH.
+Si no detecta uno, instala Python 3.11 desde https://www.python.org/downloads/
+Durante la instalacion marca Add Python to PATH.
+Cierra y vuelve a abrir la terminal e inicia ejecutar.bat otra vez.
+Comandos de diagnostico: py -0p y python --version.
